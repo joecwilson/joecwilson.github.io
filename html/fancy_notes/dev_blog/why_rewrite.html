@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>
+            Why Rewrite?
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("../../navbar.html");
+            });
+        </script>
+
+        <!--Title -->
+        <div class = "container p-3 ">
+            <h1>
+                Why Rewrite?
+            </h1>
+        </div>
+
+        <!--Return to Previous-->
+        <div class = "container pt.3 text-center">
+            <a class="btn btn-primary" href="index.html" role="button">
+                Back to Dev Blog Main Page
+            </a>
+        </div>
+
+        <!--Actual Dev Blog-->
+        <div class = "container-sm mt-4">
+            <p>
+                I have decided to rewrite the app. This decision can not be made lightly as a complete and total 
+                rewrite means throwing away weeks of work. So why did I think that this would be useful over 
+                just dealing with the code and trying to wrangle new features into the codebase?
+            </p>
+            <p>
+                Reason one for doing this rewrite was because I had learned a lot from writing the original app 
+                and from android developer courses. Implementing this knowledge into the same app would basically 
+                require a rewrite in and of itself, so why not start from complete scratch instead of working 
+                around old code that barely works.
+            </p>
+            <p>
+                A good example of why a rewrite would be useful would be using fragments instead of activities, 
+                This makes it easier to implement navigation and also brings the app closer to androids material 
+                design guidelines meaning that the app looks like more android apps that people use, giving them 
+                a comfortable UI without having to use a tutorial popup that people would forget, because who 
+                uses tutorials to figure out how to use apps. People nowadays mess around and figure out how apps 
+                work, and having apps work like other similar apps helps in this method.  
+            </p>
+            <p>
+                A second reason for the rewrite is that the code was very janky, unreadable, and untestable in the 
+                java version. This meant that the only testing that could take place was manual,  and resulted in 
+                fun times where the app crashed while using it as a note-taking app outside of the house and not 
+                being able to tell what went wrong. Making the code more testable means that occurrences like 
+                random crashing when you lack access to debugging tools should happen less often as automated 
+                testing suites can catch more edge cases than human testing if the test cases are extensive enough. 
+            </p>
+            <p>
+                Written June 7 2022
+            </p>
+        </div>
+    </body>
+</html>
