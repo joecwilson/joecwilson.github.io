@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>
+        Testing: Is the code wrong or the test? Yes.
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<div id="nav-placeholder"></div>
+<script>
+    $(function () {
+        $("#nav-placeholder").load("navbar.html");
+    });
+</script>
+<!--Title -->
+<div class="container p-3 ">
+    <h1>
+        Testing: Is the code wrong or the test? Yes.
+    </h1>
+</div>
+<!--Return to Previous-->
+<div class="container pt.3 text-center">
+    <a class="btn btn-primary" href="index.html" role="button">
+        Back to Dev Blog Main Page
+    </a>
+</div>
+<!--Actual Dev Blog-->
+<div class="container-sm mt-4">
+    <p>
+        Automated testing is the glorious idea that you can make tests to ensure that nothing is broken
+        and just press one button to run your test suite to make sure that your changes in the code base
+        didn't break anything. However, implementing tests is difficult. Sometimes tests are easy to
+        write. Writing unit testing for the note trimming functionality was quite simple and a good
+        introduction to testing and test-driven development. This is because it was a simple, singular
+        function that didn't require any connections to databases, the android context, or anything
+        else. However, not all tests were this simple to write, especially when writing testable code
+        wasn't the main idea of the previous codebase.
+    </p>
+    <p>
+        Automated testing is the glorious idea that you can make tests to ensure that nothing is broken
+        and just press one button to run your test suite to make sure that your changes in the code base
+        didn't break anything. However, implementing tests is difficult. Sometimes tests are easy to write.
+        Writing unit testing for the note trimming functionality was quite simple and a good introduction
+        to testing and test-driven development. This is because it was a simple, singular function that
+        didn't require any connections to databases, the android context, or anything else. However,
+        not all tests were this simple to write, especially when writing testable code wasn't the main
+        idea of the previous codebase.
+    </p>
+    <p>
+        Now, the test suite is not anywhere near complete, it needs many more unit tests, and at least some
+        end-to-end tests. But let's get back to the title of this. Testing: is the code or the test wrong?
+        Yes. Testing isn't easy, many times the test failed because I messed up something simple, like the
+        indexes of where items were supposed to be. However it wasn't just the testing code that was broken,
+        many times the actual code was broken, but rewriting the code to pass tests made it easier to
+        understand the code and Trust that it would do what I told it to do.
+    </p>
+    <p>
+        So would I continue to write automated tests? Yes, even though they can be a hassle to write, they can
+        still be extremely useful, as debugging the tests many times is easier than debugging the app as a whole.
+
+    </p>
+    <p>
+        Written June 24 2022
+    </p>
+</div>
+
+</body>
+</html>

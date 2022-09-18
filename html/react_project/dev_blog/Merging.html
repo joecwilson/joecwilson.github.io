@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>
+        Hell on Earth: Merging two separate projects
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<div id="nav-placeholder"></div>
+<script>
+    $(function () {
+        $("#nav-placeholder").load("navbar.html");
+    });
+</script>
+<!--Title -->
+<div class="container p-3 ">
+    <h1>
+        Hell on Earth: Merging two separate projects
+    </h1>
+</div>
+<!--Return to Previous-->
+<div class="container pt.3 text-center">
+    <a class="btn btn-primary" href="index.html" role="button">
+        Back to Dev Blog Main Page
+    </a>
+</div>
+<!--Actual Dev Blog-->
+<div class="container-sm mt-4">
+    <p>
+        When I had made this project the first step that I started off with was the React frontend, hardcoded
+        with a set of data, and what was truly a minimum viable product, with some very important and crucial
+        features missing, most importantly testing. However I was trying my best to rush out a proof of concept
+        to show my mom and maybe even get some money out of this project, so the non-essentials were skipped,
+        after all testing by hand would be good enough at the start. Right? Not right, as adding tests would
+        turn out to be nothing but sheer pain, but that wasn't the only bad decision I had made. So let's move
+        on to the backend.
+
+    </p>
+    <p>
+        The backend was actually pretty painless even though I had little experience writing python code, the
+        Django web framework came with pretty much everything I needed, and even handled the connection between
+        question groups and questions pretty seamlessly behind the hood. Django also handled the creation of
+        the API that would eventually connect back into the front-end easily.
+
+    </p>
+    <p>
+        However, the actual process of merging the frontend and backend was difficult, trying to figure out
+        what needed to go in the root directory of the entire project, and what only could stay in the root
+        directory of the front end was interesting. Additionally Tailwind CSS was causing me more problems
+        than I wanted to deal with so I scrapped that idea and wrote some bare css instead, meaning some
+        responsiveness benefits of tailwind were removed, but I figured that getting some CSS on the web
+        page would be better than no, and the backend pages also just used bare CSS so having the question
+        group view be bare CSS would make it more difficult for the user to even notice the change in how the
+        web-pages were rendered.
+    </p>
+    <p>
+        Written Sept 18 2022
+    </p>
+</div>
+
+</body>
+</html>
