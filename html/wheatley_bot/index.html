@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+        Wheatley Bot
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("navbar.html");
+        });
+    </script>
+    <main>
+        <!--Title-->
+        <div class="container p-5 text-center">
+            <h1>
+                Wheatley Bot
+            </h1>
+        </div>
+        <!--Main body-->
+        <div class="container pt.3 ">
+            <p>
+                Wheatley bot is a bot designed to be bad at playing chess. Not bad in the sense of making illegal moves,
+                but bad bytt playinmg the moves that places itself in the worst position, while assuming its oponent
+                will play the moves that place the bot in the best position.
+            </p>
+            <p>
+                The way that Wheatley bot decides that its oponent will place the wheatley in the best possible position
+                makies it didfrent form different "bad" chess bots like <a href="https://lichess.org/@/WorstFish">
+                    worstfish</a> is because wheatley will assume that his opponent is as idiotic as he is.
+            </p>
+            <p>
+                The name Wheatley bot comes from Portal 2 where wheatley is a character that was revealed to be designed
+                to be an idiot. It was also revealed that he was the "product of the greatest minds of a generation
+                working together to create the dumbest moron who ever lived". Of course wheatley bot is not accurate to
+                that part of Portal 2
+            </p>
+
+            <!--Rechnologlies Used and Why-->
+
+            <!--Standard Blog features, etc-->
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Roadmap</h5>
+                        <p class="card-text ">
+                            See what features are planned to be added next, and which ones are a long way aways
+                        </p>
+                        <div class=".container text-center">
+                            <a href="roadmap.html" class="btn btn-primary ">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center ">Current Features</h5>
+                        <p class="card-text">
+                            See what features currently exist
+                        </p>
+                        <div class=".container text-center">
+                            <a href="features.html" class="btn btn-primary">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container pt.3 text-center mt-5">
+                <a class="btn btn-primary" href="https://github.com/joecwilson/FullStack" role="button">
+                    See Code
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

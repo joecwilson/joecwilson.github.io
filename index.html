@@ -1,109 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head>
-        <title>
-            My First webpage
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="css/colors.css"/>
-    </head>
+<head>
+    <title>
+        My First webpage
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/colors.css" />
+</head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white" href="/index.html">Joseph Wilson</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="/index.html">Joseph Wilson</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link link-light" href="/html/about_me.html">About Me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle link-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle link-light" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/html/wheatley_bot/index.html">Wheatley Bot</a></li>
+                            <li><a class="dropdown-item" href="/html/react_project/index.html">Unnamed Full Stack
+                                    App</a></li>
                             <li><a class="dropdown-item" href="/html/fancy_notes/index.html">Fancy Notes</a></li>
-                            <li><a class="dropdown-item" href="/html/water_me/index.html">Water Me</a></li>
-                            <li><a class="dropdown-item" href="/html/react_project/index.html">Unnamed Full Stack App</a></li>
+
                         </ul>
                     </li>
                 </ul>
-                </div>
             </div>
-        </nav>
-        <main>
-            <div class = ".container-fluid p-5 .bg-dark">
-                <!-- Title of Site-->
-                <div class = ".container-fluid text-center">
-                    <h1>
-                        Joseph's Website
-                    </h1>
-                </div>
-    
-                <!-- Body Text-->
-                <div class = ".container p-3">
-                    <p>
-                        This is where I show off what I am working on, and why I am making the decisions I am while making them
-                    </p>
-                </div>
-    
-                <!-- Current Project Cards-->
-
-                <div class="card-group">
-                    <!--Unnamed Full Stack-->
-                    <div class="card">
-                        <img src="images/React.svg" class="card-img-top p-5" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Unnamed Full Stack Project</h5>
-                            <p class="card-text">
-                                A in development web-app created to show questions that build on each other
-                            </p>
-                            <div class = ".container text-center">
-                                <a href="/html/react_project/index.html" class="btn btn-primary">More Detail</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Fancy Notes-->
-                    <div class="card" >
-                        <img src="images/FancyNoteIcon.svg" class="card-img-top " alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Fancy Notes</h5>
-                            <p class="card-text">
-                                An app created to allow for the creation of notes, with features being planned to make it useful
-                                for more specialised note-taking.
-                            </p>
-                            <div class = ".container text-center">
-                                <a href="/html/fancy_notes/index.html" class="btn btn-primary">More Detail</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--WaterMe-->
-                    <div class="card">
-                        <img src="images/Weather_Icon.svg" class="card-img-top p-5" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Water Me</h5>
-                            <p class="card-text">
-                                An app created to tell when it is raining in phoenix (or similar dry city) so you can know when to
-                                water your succulents.
-                            </p>
-                            <div class = ".container text-center">
-                                <a href="/html/water_me/index.html" class="btn btn-primary">More Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </nav>
+    <main>
+        <div class=".container-fluid p-5 .bg-dark">
+            <!-- Title of Site-->
+            <div class=".container-fluid text-center">
+                <h1>
+                    Joseph's Website
+                </h1>
             </div>
 
-        </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    </body>
+            <!-- Body Text-->
+            <div class=".container p-3">
+                <p>
+                    This is where I show off what I am working on, and why I am making the decisions I am while making
+                    them
+                </p>
+            </div>
+
+            <!-- Main Project Cards-->
+
+            <div class="card-group">
+
+                <!--Wheatley Bot-->
+                <div class="card">
+                    <img src="images/rust-logo-blk.svg" class="card-img-top p-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Wheatley Bot</h5>
+                        <p class="card-text">
+                            A chess engine built in rust, with a goal to try to lose the game aganist another
+                            player that also tries to lose.
+                        </p>
+                        <div class=".container text-center">
+                            <a href="/html/wheatley_bot/index.html" class="btn btn-primary">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Unnamed Full Stack-->
+                <div class="card">
+                    <img src="images/React.svg" class="card-img-top p-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Unnamed Full Stack Project</h5>
+                        <p class="card-text">
+                            A in development web-app created to show questions that build on each other
+                        </p>
+                        <div class=".container text-center">
+                            <a href="/html/react_project/index.html" class="btn btn-primary">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Fancy Notes-->
+                <div class="card">
+                    <img src="images/FancyNoteIcon.svg" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fancy Notes</h5>
+                        <p class="card-text">
+                            An app created to allow for the creation of notes, with features being planned to make it
+                            useful
+                            for more specialised note-taking.
+                        </p>
+                        <div class=".container text-center">
+                            <a href="/html/fancy_notes/index.html" class="btn btn-primary">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</body>
+
 </html>

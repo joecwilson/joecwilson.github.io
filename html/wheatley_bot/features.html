@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+        Wheatley Bot Features
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("navbar.html");
+        });
+    </script>
+
+    <div class="container p-5 ">
+        <h1>
+            Wheatley Bot Features
+        </h1>
+
+    </div>
+    <div class="container pt.3 ">
+        <div class="container pt.3 text-center mt-5">
+            <a class="btn btn-primary" href="index.html" role="button">
+                Back to Project Page
+            </a>
+        </div>
+        <ul>
+            <li>
+                Fast and correct movegen provided by <a href="https://github.com/analog-hors/cozy-chess"> cozy
+                    chess.</a>
+            </li>
+            <li>
+                Uses simple piece-square tables provided by Tomasz Michniewski to provide heuristics of how good a board
+                state is.
+            </li>
+            <li>
+                Displays the game on a terminal screen using unicode chess characters.
+            </li>
+            <li>
+                Displays the engines recomended move, and its projected evaluation of the board.
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
